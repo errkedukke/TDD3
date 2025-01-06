@@ -38,4 +38,9 @@ public class CalcStats
         }
         return count;
     }
+
+    public double CalculateAverage(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
 }

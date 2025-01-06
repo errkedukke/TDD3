@@ -50,4 +50,18 @@ public class CalcStatsTests
         // Assert
         Assert.That(result, Is.EqualTo(4));
     }
+
+    [Test]
+    public void CalculateAverage_ShouldReturnAverageValue()
+    {
+        // Arrange
+        var numbers = new[] { 1, 2, 3, 4 };
+
+        // Act
+        var result = _calcStats.CalculateAverage(numbers);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(2.5));
+    }
+}
 }
