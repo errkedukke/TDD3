@@ -18,6 +18,14 @@ public class CalcStats
 
     public int CalculateMaximum(int[] numbers)
     {
-        throw new NotImplementedException();
+        int max = numbers[0];
+        foreach (var number in numbers)
+        {
+            if (number > max)
+            {
+                max = number;
+            }
+        }
+        return max;
     }
 }
