@@ -31,6 +31,11 @@ public class CalcStats
 
     public int CalculateCount(int[] numbers)
     {
-        throw new NotImplementedException();
+        int count = 0;
+        foreach (var _ in numbers)
+        {
+            count++;
+        }
+        return count;
     }
 }
