@@ -24,4 +24,17 @@ public class CalcStatsTests
         // Assert
         Assert.That(result, Is.EqualTo(1));
     }
+
+    [Test]
+    public void CalculateStats_ShouldReturnMaximumValue()
+    {
+        // Arrange
+        var numbers = new[] { 1, 2, 3, 4 };
+
+        // Act
+        var result = _calcStats.CalculateMaximum(numbers);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(4));
+    }
 }

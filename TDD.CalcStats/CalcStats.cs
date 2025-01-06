@@ -15,4 +15,9 @@ public class CalcStats
         }
         return min;
     }
+
+    public int CalculateMaximum(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
 }
