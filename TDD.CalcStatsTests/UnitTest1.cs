@@ -52,7 +52,7 @@ public class CalcStatsTests
     }
 
     [Test]
-    public void CalculateAverage_ShouldReturnAverageValue()
+    public void CalculateStats_ShouldReturnAverageValue()
     {
         // Arrange
         var numbers = new[] { 1, 2, 3, 4 };
@@ -63,5 +63,4 @@ public class CalcStatsTests
         // Assert
         Assert.That(result, Is.EqualTo(2.5));
     }
-}
 }

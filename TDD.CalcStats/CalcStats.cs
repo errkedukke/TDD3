@@ -41,6 +41,13 @@ public class CalcStats
 
     public double CalculateAverage(int[] numbers)
     {
-        throw new NotImplementedException();
+        int sum = 0;
+        int count = 0;
+        foreach (var number in numbers)
+        {
+            sum += number;
+            count++;
+        }
+        return (double)sum / count;
     }
 }
