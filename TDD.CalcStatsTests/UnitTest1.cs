@@ -26,13 +26,26 @@ public class CalcStatsTests
     }
 
     [Test]
-    public void CalculateStats_ShouldReturnMaximumValue()
+    public void CalculateMaximum_ShouldReturnMaximumValue()
     {
         // Arrange
         var numbers = new[] { 1, 2, 3, 4 };
 
         // Act
         var result = _calcStats.CalculateMaximum(numbers);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(4));
+    }
+
+    [Test]
+    public void CalculateCount_ShouldReturnNumberOfElements()
+    {
+        // Arrange
+        var numbers = new[] { 1, 2, 3, 4 };
+
+        // Act
+        var result = _calcStats.CalculateCount(numbers);
 
         // Assert
         Assert.That(result, Is.EqualTo(4));

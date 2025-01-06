@@ -28,4 +28,9 @@ public class CalcStats
         }
         return max;
     }
+
+    public int CalculateCount(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
 }
