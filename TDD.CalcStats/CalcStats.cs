@@ -5,6 +5,14 @@ public class CalcStats
 {
     public int CalculateMinimum(int[] numbers)
     {
-        throw new NotImplementedException();
+        int min = numbers[0];
+        foreach (var number in numbers)
+        {
+            if (number < min)
+            {
+                min = number;
+            }
+        }
+        return min;
     }
 }
